@@ -40,7 +40,7 @@ ext = require('./phonebook.json')
 
 module.exports = (robot) ->
 
-  robot.hear /hello|greeting|good morning|good evening|aloha|hola|hi/i, (msg) ->
+  robot.hear /hello|greeting|good morning|good evening|aloha|hola| hi /i, (msg) ->
     msg.send msg.random hellos
 
   robot.hear /orly/i, (msg) ->
