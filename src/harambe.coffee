@@ -2,10 +2,10 @@
 #   Silly scripts (usually automatic responses) that provide some spice to hubot.
 #
 # Commands:
-#   hubot list ext - Gives a list of phone extensions for the team. 
+#   hubot list lists - returns a list of lists that can be returned 
 #
 # Notes:
-#   <optional notes required for the script>
+#   You should edit /src/lists.json to include useful information.
 #
 # Author:
 #   ParadoxGuitarist
@@ -36,11 +36,11 @@ nooo = [
   'http://i.imgur.com/fE18keE.gif'
 ]
 
-ext = require('./phonebook.json')
+lists = require('./lists.json')
 
 module.exports = (robot) ->
 
-  robot.hear /hello|greeting|good morning|good evening|aloha|hola| hi /i, (msg) ->
+  robot.hear /hello|greeting|good morning|good evening|aloha|hola|hi /i, (msg) ->
     msg.send msg.random hellos
 
   robot.hear /orly/i, (msg) ->
@@ -52,10 +52,9 @@ module.exports = (robot) ->
   robot.hear /harambe/i, (msg) -> 
     msg.send "Perhaps, you are referring to me, Harambot, brought back to life in this form: a chat bot. #NeverForget." 
 
-  robot.respond /list (ext|extensions)/i, (msg) ->
-    message = "Here's a list of known extensions for our group:"
-    message += "\n>#{i}" for i in ext
-    msg.send message
+  robot.respond /list (.*)$/i, (msg) ->
+    key = msg.match[1].toLowerCase().split(" ").join("-")
+    msg.send lists[key]
 
   robot.hear /badge/i, (msg) ->
     msg.send "Badges? BADGES?!? We Don't Need No Stink'n BADGES!!!!"
