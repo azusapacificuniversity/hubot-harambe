@@ -1,7 +1,7 @@
 {
   "name": "hubot-harambe",
   "description": "Silly scripts (usually automatic responses) that provide some spice to hubot.",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "ParadoxGuitarist",
   "license": "MIT",
 
@@ -20,7 +20,6 @@
   },
 
   "peerDependencies": {
-    "hubot": "2.x"
   },
 
   "devDependencies": {
