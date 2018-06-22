@@ -74,4 +74,4 @@ module.exports = (robot) ->
     msg.send "Badges? BADGES?!? We Don't Need No Stink'n BADGES!!!!"
 
   robot.hear /it's working|its working|it works/i, (msg) ->
-    msg.send "https://m.popkey.co/b907ae/Y0jgQ.gif"
+    msg.send "https://media.giphy.com/media/GIEXgLDfghUSQ/giphy.gif"
