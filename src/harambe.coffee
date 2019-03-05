@@ -27,9 +27,9 @@ hellos = [
   "GOOOOOOOOOD MORNING VIETNAM!",
   "'Ello gov'nor!",
   "This call may be recorded for training purposes.",
-  "How you doin'?"
+  "How you doin'?",
+  "https://media.giphy.com/media/ASd0Ukj0y3qMM/giphy.gif"
 ]
-
 papercount = [
   "https://media.tenor.com/images/6cfa7a41ac8e289f5b3991f414429022/tenor.gif",
   "https://media.giphy.com/media/tTMhcdiREv2W4/giphy.gif",
@@ -51,7 +51,7 @@ lists = require('./lists.json')
 
 module.exports = (robot) ->
 
-  robot.hear /hello|greeting|good morning|good evening|aloha|hola|hi /i, (msg) ->
+  robot.hear /hello|greeting|good morning|good evening|aloha|hola|hi haramb/i, (msg) ->
     msg.send msg.random hellos
 
   robot.hear /paper count|papercount/i, (msg) ->
