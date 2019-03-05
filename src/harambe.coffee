@@ -28,7 +28,8 @@ hellos = [
   "'Ello gov'nor!",
   "This call may be recorded for training purposes.",
   "How you doin'?",
-  "https://media.giphy.com/media/ASd0Ukj0y3qMM/giphy.gif"
+  "https://media.giphy.com/media/ASd0Ukj0y3qMM/giphy.gif",
+  "Myohmyohmyohmy"
 ]
 papercount = [
   "https://media.tenor.com/images/6cfa7a41ac8e289f5b3991f414429022/tenor.gif",
