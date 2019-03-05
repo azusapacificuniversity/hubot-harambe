@@ -27,7 +27,8 @@ hellos = [
   "GOOOOOOOOOD MORNING VIETNAM!",
   "'Ello gov'nor!",
   "This call may be recorded for training purposes.",
-  "How you doin'?"
+  "How you doin'?",
+  "Myohmyohmyohmy"
 ]
 
 papercount = [
