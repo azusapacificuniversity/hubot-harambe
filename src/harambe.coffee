@@ -38,7 +38,6 @@ papercount = [
   "https://media1.giphy.com/media/m77wEsvF99FyU/giphy.gif",
   "https://media3.giphy.com/media/l2Jeal95KEUTLzNpS/giphy.gif",
   "https://media4.giphy.com/media/Nyyg06iiTiKli/200w.webp#21-grid1",
-  "https://media.giphy.com/media/310wCPV0kDUuk/giphy.gif",
   "https://68.media.tumblr.com/f270e4494aa01cd26b52c699e77fdd98/tumblr_ml6ef4HvIp1rs9keio1_400.gif"
 ]
 
