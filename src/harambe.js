@@ -74,15 +74,16 @@ module.exports = (robot) => {
     msg.send("I believe I have parts from my predecessor, harambot. #NeverForget.")
   });
 
-  robot.hear(/\bwhat are the odds\b/i, msg => {
+  robot.hear(/\bwhat are the odds\??\b/i, msg => {
     msg.finish();
+    let rand_odd = Math.floor(Math.random() * 5000) + 50;
     let the_odds = [
-      "R2 tells me that our chances of survival are",
-      "Sir, the possibility of successfully navigating this is approximately",
-      "BB-8 reports the odds are nearly",
-      "R2, I have a bad feeling about this. It seems the chances are, relatively speaking,"
+      "R2 tells me that our chances of survival are " + rand_odd + " to 1.",
+      "Sir, the possibility of successfully navigating this is approximately " + rand_odd + " to 1.",
+      "BB-8 reports the odds are nearly " + rand_odd + " to 1.",
+      "R2, I have a bad feeling about this. It seems the chances are, relatively speaking, " + rand_odd + " to 1."
     ];
-    msg.send(msg.random(the_odds) random(50, 5000) + " to 1.");
+    msg.send(msg.random(the_odds));
   });
 
   robot.respond(/list (.*)$/i, msg => {
@@ -102,7 +103,7 @@ module.exports = (robot) => {
       var badges = [
         "Badges? BADGES?!? We Don't Need No Stink'n BADGES!!!!",
         "Honey Badges don't care!!",
-        "It is my honor to present " + fname + " with the badge of otter! :first_place_medal:"
+        "It is my honor to present " + fname + " with the badge of honor! :first_place_medal:"
       ];
       msg.send(msg.random(badges));
     }
