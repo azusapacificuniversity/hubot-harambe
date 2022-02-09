@@ -9,11 +9,11 @@
 
   "repository": {
     "type": "git",
-    "url": "git://github.com/hubot-scripts/hubot-harambe.git"
+    "url": "git://github.com/azusapacificuniversity/hubot-harambe.git"
   },
 
   "bugs": {
-    "url": "https://github.com/hubot-scripts/hubot-harambe/issues"
+    "url": "https://github.com/azusapacificuniversity/hubot-harambe/issues"
   },
 
   "dependencies": {
@@ -38,7 +38,7 @@
     "sinon-chai": "^2.7.0"
   },
 
-  "main": "index.coffee",
+  "main": "index.js",
 
   "scripts": {
     "test": "grunt test"
